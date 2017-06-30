@@ -40,7 +40,7 @@ public class AreaController extends BaseController{
 	private RegionService regionService;
 	
 	/**
-	 * <pre>findAreaXml(解析xml，并且批量添加到数据库)   
+	 * <pre>findAreaXml(解析xml，并且批量添加到数据库啊)   
 	 */
 	@RequestMapping("findAreaXml")
 	public void findAreaXml(Area area1,HttpServletResponse response) throws Exception{
