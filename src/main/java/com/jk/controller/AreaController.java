@@ -40,11 +40,11 @@ public class AreaController extends BaseController{
 	private RegionService regionService;
 	
 	/**
-	 * <pre>findAreaXml(解析xml)   
+	 * <pre>findAreaXml(解析xml，并且批量添加到数据库)   
 	 */
 	@RequestMapping("findAreaXml")
 	public void findAreaXml(Area area1,HttpServletResponse response) throws Exception{
-		  areaService.findArea(area1);
+		  areaService.dom4JXml(area1);
 		// 创建saxReader对象  
         SAXReader reader = new SAXReader();  
         // 通过read方法读取一个文件 转换成Document对象  
